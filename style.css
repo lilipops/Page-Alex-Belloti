@@ -6,7 +6,7 @@
 }
 
 .container {
-  max-width: 1360px;
+  max-width: 1760px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -19,7 +19,9 @@
   padding-top: 30px;
 }
 body {
-  background-image: url(main\ picture.webp);
+  background-image: url(images/belloti\ black\ stone\ background.jpeg);
+  
+
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -86,7 +88,7 @@ li, a, button {
   justify-content: space-between;
 }
 .content {
-  width: 70%;
+  width: 80%;
   padding: 3% 2% ;
   margin-bottom: 50px;
   background-color: rgba(0, 0, 0, 0.7);
@@ -135,7 +137,7 @@ li, a, button {
   padding: 40px; /* Some padding */
 }
 .img-left-box .contenido .contenido__heading {
-  font-family: 'Arial';
+  font-family: 'Times';
   font-size: 57px;
 }
 
@@ -206,7 +208,6 @@ li {
 }
 
 .footer__rights {
-    padding-bottom: 64px;
     display: flex;
     justify-content: left;
     opacity: 0.4;
@@ -232,17 +233,43 @@ li {
   /* margin-top: 165px; */
   
 }
+
 .sobremi {
-  margin-left: 30px;
+  margin-left: 70px;
   margin-top: 20px;
+  margin-right: 15px;
   color: white;
+  font-size: 40px;
+  font-family: 'Times';
+}
+.aboutmeleft {
+  width: 45%;
+}
+.aboutmeright {
+  width: 50%;
+  flex-direction: row;
 }
 .text-center {
 	text-align: center;	
+
+}
+.text-center {
+  font-size: 50px;
 }
 
 
 @media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+  }
+  #artist {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
   .item__flex {
     flex-wrap: wrap;
   }
@@ -273,57 +300,87 @@ li {
     justify-content: space-between;
     
   }
-  img {
+  .img-right-box img{
     justify-content: space-between;
     flex-direction: row;
     width: 48%;
   }
+  .sobremi {
+    margin-left: 70px;
+    margin-top: 20px;
+    margin-right: 15px;
+    color: white;
+    font-size: 40px
+  }
+  
 }
+@media (max-width: 425px) {
 
-
-/*
-.backgrond__white {
-
-  margin-top: 50px;
-  width: 1000px;
-  height: 500px;
-  background-color: rgb(255, 255, 255);
-  opacity: 75%;
-}
-.background__images {
-  justify-content: center;
-  width: 100%;
-  display: flex;
-  flex-direction: c;
-}
-.backgrond__white1 {
-  margin-top: 100px;
-  width: 1000px;
-  height: 500px;
-  background-color: rgb(255, 255, 255);
-  opacity: 75%;
-}
-.container {
+  .img-flex {
+      flex-wrap: wrap;
+  }
+  .img-left-box {
+      width: 100%;
+  }
+  .img-right-box {
+      width: 100%;
+      flex-wrap: wrap;
+  }
+  .img-flex img {
+      width: 100%;
+      min-height: 180px;
+      margin-bottom: 3%;
+  }
+  .header {
+    flex-direction: column;
+  }
+  .aboutmeright {
     width: 100%;
-    min-width: 100vh;
-    display: flex;
+  }
+  .sobremi {
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-right: 15px;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+    
+  }
+  .text-center {
+    font-size: 30px;
+  }
+  #artist {
     align-items: center;
+    align-self: center;
+  }
+  nav {
+    display: flex;
     justify-content: center;
-    padding: 50px 8%;
+    align-items: center;
+    text-align: center;
+  }
+  .footer__bottom { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  } 
+  .footer__rights {
+    display: flex;
+    justify-content: center;
+  }
+  .contenido__heading {
+    font-size: 10px;
+  }
+  .img-left-box .contenido {
+    padding: 20px;
+   
+  }
+
+  .img-left-box .contenido .contenido__heading {
+    font-family: 'Times';
+    font-size: 37px;
+  }
+  
 }
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 30px;
-    /* background: white; 
-    background: rgba(255, 255, 255, .75);
-    padding: 50px; 
-}*/ 
-/* .gallery img {
-    width: 100%;
-} */
-
-
-
-
-
